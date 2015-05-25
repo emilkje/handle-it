@@ -1,0 +1,16 @@
+{
+    "name": "emilkje/handle-it",
+    "description": "Handle all the errors",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emil Kjelsrud",
+            "email": "emil@innit.no"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {"Emilkje\\HandleIt\\": "src"}
+    }
+}
