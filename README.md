@@ -27,7 +27,7 @@ $overriding_handler = new Handler(function(FaultInterface $fault){
 class TestLogger extends Handler {
 	function handle(Faultinterface $fault) {
 		echo "this is an additional handler that runs as well ";
-		echo $fault->code() . " == "."\n";
+		echo $fault->code() . "\n";
 	}
 }
 
