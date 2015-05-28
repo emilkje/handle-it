@@ -1,6 +1,6 @@
 <?php namespace Emilkje\HandleIt;
 
-class Fault implements Faultinterface {
+class Fault implements FaultInterface {
 
 	private $code;
 	private $message;

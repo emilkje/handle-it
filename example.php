@@ -5,15 +5,15 @@ require_once "vendor/autoload.php";
 use Emilkje\HandleIt\HandleIt;
 use Emilkje\HandleIt\Handler;
 use Emilkje\HandleIt\HandlerInterface;
-use Emilkje\HandleIt\Faultinterface;
+use Emilkje\HandleIt\FaultInterface;
 
 $handleit = new HandleIt;
 
-$logging_handler = new Handler(function(Faultinterface $fault){
+$logging_handler = new Handler(function(FaultInterface $fault){
 	echo "Log to file\n";
 });
 
-$overriding_handler = new Handler(function(Faultinterface $fault){
+$overriding_handler = new Handler(function(FaultInterface $fault){
 	echo "Log to cloud (overrides file handler)\n";
 });
 

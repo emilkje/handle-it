@@ -4,7 +4,7 @@
  * Interface Faultinterface
  * @package Emilkje\HandleIt
  */
-interface Faultinterface {
+interface FaultInterface {
 
 	public function code();
 	public function message();
